@@ -17,14 +17,16 @@
 
     <header>
         <!--header menu-->
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <button class="btn bg-dark btn-primary m-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-                role="button">
-                <i class="bi bi-arrow-right"></i>
-            </button>
-            <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark fi fixed-top">
+
+            <div class="container-fluid">
+                <button class="btn bg-dark btn-primary m-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                    role="button">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
                 <div class="">
-                    <a class="navbar-brand link-light" href="#"><img width="120" src="./images/LOGO.png" alt="logo"></a>
+                    <a class="navbar-brand link-light p-5" href=""><img width="120" src="./images/LOGO.png"
+                            alt="logo"></a>
                 </div>
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent">
@@ -46,8 +48,8 @@
                                     <span class="material-icons"><i class="bi bi-basket2"></i></span>
                                 </div>
                             </a>
-                        </li>                       
-                        
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -66,55 +68,62 @@
                     <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                
-                <div class="offcanvas-body px-0 bg-dark " >
+
+                <div class="offcanvas-body px-0 bg-dark ">
                     <div class="image-fundo">
-                  
-                  
-                 
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start position-relative" id="menu" >
 
-                        <img src="./images/barra.jpg" class="overlay-anim2 position-absolute">
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-truncate link-dark ">
-                                <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate link-light">
-                                <i class="fs-5 bi-speedometer2"></i><span
-                                    class="ms-1 d-none d-sm-inline">Notificação</span> </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-truncate link-light">
-                                <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">Ofertas</span></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle  text-truncate link-light" id="dropdown"
-                                data-bs-toggle="dropdown">
-                                <i class="fs-5 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline">Favoritos</span>
-                            </a>
-                            <ul class="dropdown-menu text-small shadow link-light">
-                                <li><a class="dropdown-item" href="#">New project...</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item link-light" href="#">Sign out</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-truncate link-light">
-                                <i class="fs-5 bi-grid"></i><span class="ms-1 d-none d-sm-inline">Jogos</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-truncate link-light">
-                                <i class="fs-5 bi-people"></i><span class="ms-1 d-none d-sm-inline">Usuários</span> </a>
-                        </li>
-                       
-                    </ul>
+
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start position-relative"
+                            id="menu">
+
+                            <img src="./images/barra.jpg" class="overlay-anim2 position-absolute">
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-truncate link-dark ">
+                                    <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate link-light">
+                                    <i class="fs-5 bi bi-bell"></i><span
+                                        class="ms-1 d-none d-sm-inline">Notificação</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-truncate link-light">
+                                    <i class="fs-5 bi bi-tags"></i><span
+                                        class="ms-1 d-none d-sm-inline">Ofertas</span></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle  text-truncate link-light" id="dropdown"
+                                    data-bs-toggle="dropdown">
+                                    <i class="fs-5 bi bi-star"></i><span
+                                        class="ms-1 d-none d-sm-inline">Favoritos</span>
+                                </a>
+                                <ul class="dropdown-menu text-small shadow link-light">
+                                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-truncate link-light">
+                                    <i class="fs-5 bi bi-joystick"></i><span
+                                        class="ms-1 d-none d-sm-inline">Jogos</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-truncate link-light">
+                                    <i class="fs-5 bi bi-people"></i><span
+                                        class="ms-1 d-none d-sm-inline">Usuários</span> </a>
+                            </li>
+
+                        </ul>
 
                     </div>
                 </div>
@@ -125,43 +134,42 @@
         <div class="col py-3 bg-darki">
             <!--carrocel-->
             <section aria-label="carousel header">
-                <div class="card card-image bg-dark">                    
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./images/forza.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/cavalo.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/3001.jpg" class="d-block w-100" alt="...">
-                                </div>
+                <div class="card card-image bg-dark">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/forza.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/jogo7.jpg" class="d-block w-100" alt="...">
+                                <img src="./images/cavalo.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/3001.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="carousel-item">
+                            <img src="./images/jogo7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
 
 
             <section aria-label="cards de jogos">
                 <!--inicio jogos-->
-                <div class="col py-3">
-                    <div class="row m-lg-1">
-
-                        <div class="col-sm-4">
+                <div class="col py-1 container-fluid ">
+                    <div class="row">
+                        <div class="col-sm-4 mt-2">
                             <div class="card bg-dark">
                                 <div class="card-body">
                                     <iframe width="100%" height="100%"
@@ -171,32 +179,34 @@
                                         allowfullscreen>
                                     </iframe>
                                     <h5 class="card-title">Especial RPG</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>                                   
-                                    
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+
                                     <button class="btn btn-primary button">Saber mais..</button>
                                 </div>
                             </div>
                         </div>
-                           
-                        <div class="col-sm-4">
+
+                        <div class="col-sm-4 mt-2">
                             <div class="card bg-dark">
                                 <div class="card-body ">
                                     <iframe width="100%" height="100%"
-                                        src="https://www.youtube.com/embed/QwCV-Cuvko0?start=24" 
+                                        src="https://www.youtube.com/embed/QwCV-Cuvko0?start=24"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen>
                                     </iframe>
                                     <h5 class="card-title">Lutas</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>                                  
-                                    <a class="btn btn-primary button1"role="button">Saber mais...
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a class="btn btn-primary button1" role="button">Saber mais...
                                     </a>
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 mt-2">
                             <div class="card bg-dark">
                                 <div class="card-body ">
                                     <iframe width="100%" height="100%"
@@ -208,20 +218,18 @@
                                     <h5 class="card-title">Futebol</h5>
                                     <p class="card-text">With supporting text below as a natural lead-in to additional
                                         content.</p>
-                                    <a class="btn btn-primary button2"  role="button">Saber mais...
+                                    <a class="btn btn-primary button2" role="button">Saber mais...
                                     </a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
 
-                <div class="col py-3">
-                    <div class="row m-lg-1">
+                <div class="col py-0 container-fluid">
+                    <div class="row">
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 mt-2">
                             <div class="card bg-dark">
                                 <div class="card-body ">
                                     <iframe width="100%" height="100%"
@@ -235,13 +243,13 @@
                                         content.</p>
                                     <a class="btn btn-primary button3" role="button">Saber mais...
                                     </a>
-                                    
+
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 mt-2">
                             <div class="card bg-dark">
                                 <div class="card-body ">
                                     <iframe width="100%" height="100%"
@@ -256,16 +264,15 @@
                                         content.</p>
                                     <a class="btn btn-primary button4" role="button">Saber mais...
                                     </a>
-                                    </div>
+                                </div>
                             </div>
                         </div>
 
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 mt-2">
                             <div class="card bg-dark">
                                 <div class="card-body">
-                                    <iframe width="100%" height="100%"
-                                     src="https://www.youtube.com/embed/Nx9NgXi8nP8"
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Nx9NgXi8nP8"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen> <img class="card-img-top rounded" src="./images/jogo6.png"
@@ -276,207 +283,215 @@
                                         content.</p>
                                     <a class="btn btn-primary button5" role="button">Saber mais...
                                     </a>
-                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-        </div>
-        </section>
-
-        
+            </section>
+        </div>        
     </main>
 
-   <div id="modal-promocao" class="modal-container">
+    <div id="modal-promocao" class="modal-container">
         <div class="modal-jogos">
-          <button class="fechar">x</button>
-          <h2 class="card-title text-light py-2 mx-lg-3">The Witcher 3</h2>
-          <img src="./images/jogo1.jpg" class="card-img" alt="...">
-          <div class="card text-bg-dark">
-            <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
+            <button class="fechar">x</button>
+            <h2 class="card-title text-light py-2 mx-lg-3">The Witcher 3</h2>
+            <img src="./images/jogo1.jpg" class="card-img" alt="...">
+            <div class="card text-bg-dark">
+                <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
 
-              <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </p>
-                <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 290,00</a >
+                    <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in
+                        to additional content. This content is a little bit longer.
+                    </p>
+                    <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 290,00</a>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
     <div id="modal-promo--two" class="modal-container">
         <div class="modal-jogos">
-          <button class="fechar">x</button>
-          <h2 class="card-title text-light py-2 mx-lg-3">WWE -2k22</h2>
-          <img src="./images/wwe.jpg" class="card-img" alt="...">
-          <div class="card text-bg-dark">
-            <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
+            <button class="fechar">x</button>
+            <h2 class="card-title text-light py-2 mx-lg-3">WWE -2k22</h2>
+            <img src="./images/wwe.jpg" class="card-img" alt="...">
+            <div class="card text-bg-dark">
+                <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
 
-              <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </p>
-                <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 280,00</a >
+                    <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in
+                        to additional content. This content is a little bit longer.
+                    </p>
+                    <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 280,00</a>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
     <div id="modal-promo--tree" class="modal-container">
         <div class="modal-jogos">
-          <button class="fechar">x</button>
-          <h2 class="card-title text-light py-2 mx-lg-3">Fifa</h2>
-          <img src="./images/jogo3.jpg" class="card-img" alt="...">
-          <div class="card text-bg-dark">
-            <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
+            <button class="fechar">x</button>
+            <h2 class="card-title text-light py-2 mx-lg-3">Fifa</h2>
+            <img src="./images/jogo3.jpg" class="card-img" alt="...">
+            <div class="card text-bg-dark">
+                <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
 
-              <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </p>
-                <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 279,00</a >
+                    <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in
+                        to additional content. This content is a little bit longer.
+                    </p>
+                    <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 279,00</a>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
     <div id="modal-promo--four" class="modal-container">
         <div class="modal-jogos">
-          <button class="fechar">x</button>
-          <h2 class="card-title text-light py-2 mx-lg-3">Sparta</h2>
-          <img src="./images/sparta.jpg" class="card-img" alt="...">
-          <div class="card text-bg-dark">
-            <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
+            <button class="fechar">x</button>
+            <h2 class="card-title text-light py-2 mx-lg-3">Sparta</h2>
+            <img src="./images/sparta.jpg" class="card-img" alt="...">
+            <div class="card text-bg-dark">
+                <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
 
-              <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </p>
-                <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 320,00</a >
+                    <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in
+                        to additional content. This content is a little bit longer.
+                    </p>
+                    <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 320,00</a>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
     <div id="modal-promo--five" class="modal-container">
         <div class="modal-jogos">
-          <button class="fechar">x</button>
-          <h2 class="card-title text-light py-2 mx-lg-3">Warface</h2>
-          <img src="./images/warface.jpg" class="card-img" alt="...">
-          <div class="card text-bg-dark">
-            <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
+            <button class="fechar">x</button>
+            <h2 class="card-title text-light py-2 mx-lg-3">Warface</h2>
+            <img src="./images/warface.jpg" class="card-img" alt="...">
+            <div class="card text-bg-dark">
+                <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
 
-              <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </p>
-                <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 275,00</a >
+                    <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in
+                        to additional content. This content is a little bit longer.
+                    </p>
+                    <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 275,00</a>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
     <div id="modal-promo--six" class="modal-container">
         <div class="modal-jogos">
-          <button class="fechar">x</button>
-          <h2 class="card-title text-light py-2 mx-lg-3">Fórmula 1 2023</h2>
-          <img src="./images/jogo6.png" class="card-img" alt="...">
-          <div class="card text-bg-dark">
-            <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
+            <button class="fechar">x</button>
+            <h2 class="card-title text-light py-2 mx-lg-3">Fórmula 1 2023</h2>
+            <img src="./images/jogo6.png" class="card-img" alt="...">
+            <div class="card text-bg-dark">
+                <div class="card-img-overlay d-flex justify-content-between align-items-center py-5">
 
-              <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </p>
-              
-              <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 280,00</a >
+                    <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in
+                        to additional content. This content is a little bit longer.
+                    </p>
+
+                    <a href="carrinho.html" class="btn btn-success w-50">Comprar R$ 280,00</a>
+                </div>
             </div>
-          </div>
         </div>
     </div>
-    <footer class="text-center text-lg-start bg-dark text-muted">        
-        <div class="d-flex justify-content-center justify-content-lg-between align-items-center p-4 border-bottom"></div>        
-      
+
+    <footer class="text-center text-lg-start bg-dark text-muted">
+        <div class="d-flex justify-content-center justify-content-lg-between align-items-center p-4 border-bottom">
+        </div>
+
         <!-- Section: Links  -->
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                    <img width="100" src="./images/LOGO.png" alt="logo">
-                </h6>              
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Consoles
-                </h6>
-                <p>
-                  <a href="#!" class="text-reset"><i class="bi bi-playstation"> Playstation</i></a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset"><i class="bi bi-xbox"> Xbox</i></a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset"><i class="bi bi-pc-display-horizontal"> PC</i></a>
-                </p>                
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  Redes Sociais
-                </h6>
-                <p>
-                    <a href="#!" class="text-reset"><i class="bi bi-github">  Fabiano Rogalewski</i></a>
-                </p>
-                <p>
-                    <a href="#!" class="text-reset"><i class="bi bi-github">  Alexandre Kmetiuk</i></a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset"><i class="bi bi-facebook">  Facebook</i></a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset"><i class="bi bi-twitter">  Twitter</i></a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset"><i class="bi bi-youtube">  Youtube</i></a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset"><i class="bi bi-linkedin">  Fabiano Rogalewski</i></a>
-                </p>
-                <p>
-                    <a href="#!" class="text-reset"><i class="bi bi-linkedin">  Alexandre Kmetiuk</i></a>
-                  </p>
-              </div>
-              <!-- Grid column -->
-      
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
-                <p><i class="fas fa-home me-3">São José dos Pinhais, Nº 3434 - PR</i</p>
-                <p>
-                <i class="fas fa-envelope me-3">contato@topgame.com.br</i>
-                </p>
-                <p><i class="fas fa-phone me-3">+ 55 41 99898-1806</i></p>
-                <p><i class="fas fa-print me-3">+ 55 41 95675-8952</i></p>
-              </div>
-              <!-- Grid column -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img width="100" src="./images/LOGO.png" alt="logo">
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Consoles
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset"><i class="bi bi-playstation"> Playstation</i></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"><i class="bi bi-xbox"> Xbox</i></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"><i class="bi bi-pc-display-horizontal"> PC</i></a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Redes Sociais
+                        </h6>
+                        <p>
+                            <a href="https://github.com/frogalewski/TopGame" class="text-reset"><i class="bi bi-github">
+                                    Fabiano Rogalewski</i></a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/AlexandreKmetiuk" class="text-reset"><i class="bi bi-github">
+                                    Alexandre Kmetiuk</i></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"><i class="bi bi-facebook"> Facebook</i></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"><i class="bi bi-twitter"> Twitter</i></a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"><i class="bi bi-youtube"> Youtube</i></a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/fabiano-rogalewski-aaa399141/" class="text-reset"><i
+                                    class="bi bi-linkedin"> Fabiano Rogalewski</i></a>
+                        </p>
+                        <p>
+                            <a href="www.linkedin.com/in/alexandre-kmetiuk" class="text-reset"><i
+                                    class="bi bi-linkedin"> Alexandre Kmetiuk</i></a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                        <p><i class="bi bi-geo-alt"> São José dos Pinhais, Nº 3434 - PR</i></p>
+                        <p><i class="bi bi-envelope"> contato@topgame.com.br</i></p>
+                        <p><i class="bi bi-telephone"> + 55 41 99898-1806</i></p>
+                        <p><i class="bi bi-telephone"> + 55 41 95675-8952</i></p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
             </div>
-            <!-- Grid row -->
-          </div>
         </section>
         <!-- Section: Links  -->
-      
+
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2022 Copyright:
-          <a class="text-reset fw-bold" href="#">TopGame</a>
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="#">TopGame</a>
         </div>
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-            
-     
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"> </script>
     <script type="text/javascript" src="./js/models.j"></script>
     <script type="text/javascript" src="./js/script.j"></script>
